@@ -1,4 +1,4 @@
-const bountyWebHook = process.env.EDA_WEBHOOK_SECRET
+const EDAWebHook = process.env.EDA_WEBHOOK_SECRET
 
 export function WFMessage(message) {
     let payload = {
@@ -7,7 +7,7 @@ export function WFMessage(message) {
 
     (async () => {
         try {
-            const response = await fetch(bountyWebHook, {
+            const response = await fetch(EDAWebHook, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
