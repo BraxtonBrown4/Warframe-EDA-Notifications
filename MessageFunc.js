@@ -1,4 +1,4 @@
-const bountyWebHook = process.env.BOUNTY_WEBHOOK_SECRET
+const bountyWebHook = process.env.EDA_WEBHOOK_SECRET
 
 export function WFMessage(message) {
     let payload = {

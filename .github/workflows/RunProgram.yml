@@ -23,4 +23,4 @@ jobs:
       - name: Run JavaScript Program
         run: node main.js
         env:
-          FISSURE_WEBHOOK_SECRET: ${{ secrets.FISSURE_WEBHOOK_SECRET }}
+          FISSURE_WEBHOOK_SECRET: ${{ secrets.EDA_WEBHOOK_SECRET }}
