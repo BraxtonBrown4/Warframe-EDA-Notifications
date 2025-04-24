@@ -3,7 +3,7 @@ name: Run JavaScript Program On-Demand
 on:
   schedule:
     # Add comment
-     - cron: '* * * * *'
+     - cron: '1 * * * *'
   workflow_dispatch: {}
 jobs:
   run-app:
@@ -23,4 +23,5 @@ jobs:
       - name: Run JavaScript Program
         run: node main.js
         env:
+          
           FISSURE_WEBHOOK_SECRET: ${{ secrets.EDA_WEBHOOK_SECRET }}
