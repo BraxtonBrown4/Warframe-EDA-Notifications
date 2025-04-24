@@ -3,7 +3,7 @@ name: Run JavaScript Program On-Demand
 on:
   schedule:
     # Add comment
-     - cron: '* * * * 1'
+     - cron: '0 12 * * 1'
   workflow_dispatch: {}
 jobs:
   run-app:
